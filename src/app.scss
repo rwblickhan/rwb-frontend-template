@@ -5,8 +5,13 @@
   text-align: center;
 }
 
+.buttons {
+  display: flex;
+  flex-direction: row;
+}
+
 .logo {
-  height: 6em;
+  height: 10em;
   padding: 1.5em;
 
   &:hover {
