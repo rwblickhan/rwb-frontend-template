@@ -1,5 +1,5 @@
 :root {
-  // Transitional from https://modernfontstacks.com
+  /* Transitional from https://modernfontstacks.com */
   font-family: Charter, "Bitstream Charter", "Sitka Text", Cambria, serif;
   line-height: 1.5;
   font-weight: 400;
@@ -13,22 +13,22 @@
 }
 
 @layer reset {
-  // Reset based on https://keithjgrant.com/posts/2024/01/my-css-resets/
+  /* Reset based on https://keithjgrant.com/posts/2024/01/my-css-resets/ */
 
   *,
   *::before,
   *::after {
-    // Enable border-box everywhere
+    /* Enable border-box everywhere */
     box-sizing: border-box;
   }
 
   html {
-    // Prevent font size inflation
+    /* Prevent font size inflation */
     text-size-adjust: none;
   }
 
   body {
-    // Remove default <body> margin
+    /* Remove default <body> margin */
     margin: unset;
   }
 
@@ -36,7 +36,7 @@
   input,
   textarea,
   select {
-    // Controls and textareas should use the same fonts
+    /* Controls and textareas should use the same fonts */
     font: inherit;
   }
 
@@ -44,7 +44,7 @@
   picture,
   svg,
   canvas {
-    // Make images behave better
+    /* Make images behave better */
     display: block;
     max-inline-size: 100%;
     block-size: auto;
@@ -54,7 +54,7 @@
     *,
     *::before,
     *::after {
-      // Turn off animations if prefers-reduced-motion
+      /* Turn off animations if prefers-reduced-motion */
       animation-duration: 0.01ms !important;
       animation-iteration-count: 1 !important;
       transition-duration: 0.01ms !important;
@@ -67,10 +67,10 @@ a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
+}
 
-  &:hover {
-    color: #535bf2;
-  }
+a:hover {
+  color: #535bf2;
 }
 
 body {
@@ -96,15 +96,15 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+}
 
-  &:hover {
-    border-color: #646cff;
-  }
+body:hover {
+  border-color: #646cff;
+}
 
-  &:focus,
-  &:focus-visible {
-    outline: 4px auto -webkit-focus-ring-color;
-  }
+body:focus,
+body:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
 }
 
 @media (prefers-color-scheme: light) {

@@ -1,6 +1,6 @@
 import { render } from "preact";
 import { App } from "./app.tsx";
-import "./index.scss";
+import "./index.css";
 
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 

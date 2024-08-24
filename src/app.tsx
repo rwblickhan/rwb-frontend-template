@@ -1,23 +1,28 @@
 import { useState } from "preact/hooks";
 import preactLogo from "./assets/preact.svg";
 import viteLogo from "/vite.svg";
-import "./app.scss";
+import classes from "./app.module.css";
+import classNames from "classnames";
 
 export function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <div className="buttons">
+      <div className={classes.buttons}>
         <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
+          <img src={viteLogo} className={classes.logo} alt="Vite logo" />
         </a>
         <a href="https://preactjs.com" target="_blank" rel="noreferrer">
-          <img src={preactLogo} className="logo preact" alt="Preact logo" />
+          <img
+            src={preactLogo}
+            className={classNames(classes.logo, classes.preact)}
+            alt="Preact logo"
+          />
         </a>
       </div>
       <h1>Vite + Preact</h1>
-      <div className="card">
+      <div className={classes.card}>
         <button
           onClick={() => {
             setCount((count) => count + 1);
@@ -29,7 +34,7 @@ export function App() {
           Edit <code>src/app.tsx</code> and save to test HMR
         </p>
       </div>
-      <p className="read-the-docs">
+      <p className={classes.readthedocs}>
         Click on the Vite and Preact logos to learn more
       </p>
     </>
